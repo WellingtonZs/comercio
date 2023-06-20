@@ -1,9 +1,11 @@
 package com.itb.inf2fm.comercio.controller;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -16,7 +18,7 @@ public class LojaController {
 	List<Produto> listaDeProdutos = new ArrayList<Produto>();
 	
 	@GetMapping("/listar")
-	public String listarProdutos() {
+	public String listarProdutos(Model model) {
 		
 		Produto p1 = new Produto();
 		p1.setId (20l);
@@ -45,6 +47,8 @@ public class LojaController {
 		listaDeProdutos.add(p1);
 		listaDeProdutos.add(p2);
 		listaDeProdutos.add(p3);
+		
+		model.addAttribute("listaDeProdutos", listaDeProdutos);
 		
 		return "produtos";
 	}
