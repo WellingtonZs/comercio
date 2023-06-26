@@ -28,18 +28,18 @@ public class LojaController {
 		p1.setPreco(3215.89);
 		
 		Produto p2 = new Produto();
-		p1.setId (20l);
-		p1.setNome("Televisão 70 Polegadas");
-		p1.setCodigobarras("213KASDK1ASD13OWE");
-		p1.setDescricao("Televisor 70 Polegadas Tela Plana LED Samsung");
-		p1.setPreco(6326.12);
+		p2.setId (21l);
+		p2.setNome("Televisão 70 Polegadas");
+		p2.setCodigobarras("213KASDK1ASD13OWE");
+		p2.setDescricao("Televisor 70 Polegadas Tela Plana LED Samsung");
+		p2.setPreco(6326.12);
 		
 		Produto p3 = new Produto();
-		p1.setId (20l);
-		p1.setNome("Honda Civic Si");
-		p1.setCodigobarras("213K12312JQW13OWE");
-		p1.setDescricao("Honda Civic Si 2007");
-		p1.setPreco(63265.62);
+		p3.setId (22l);
+		p3.setNome("Honda Civic Si");
+		p3.setCodigobarras("213K12312JQW13OWE");
+		p3.setDescricao("Honda Civic Si 2007");
+		p3.setPreco(63265.62);
 		
 		
 		// Adicionando os produtos à lista
