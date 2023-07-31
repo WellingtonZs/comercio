@@ -7,6 +7,7 @@ public class Produto {
 	private String descricao;
 	private String codigobarras;
 	private double preco;
+	private boolean status;
 	
 	// puclic: acesso liberado para todas as classes
 		// private: permitido apenas para os membros da mesma classe
@@ -43,8 +44,13 @@ public class Produto {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
-	
-	
+	public boolean getStatus() {
+		return status;
+	}
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+
 	
 	
 	

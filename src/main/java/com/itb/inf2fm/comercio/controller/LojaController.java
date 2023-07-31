@@ -26,6 +26,7 @@ public class LojaController {
 		p1.setCodigobarras("213KASDK131233OWE");
 		p1.setDescricao("Produto Linha Branca com painel digital");
 		p1.setPreco(3215.89);
+		p1.setStatus(false);
 		
 		Produto p2 = new Produto();
 		p2.setId (21l);
@@ -33,6 +34,7 @@ public class LojaController {
 		p2.setCodigobarras("213KASDK1ASD13OWE");
 		p2.setDescricao("Televisor 70 Polegadas Tela Plana LED Samsung");
 		p2.setPreco(6326.12);
+		p2.setStatus(true);
 		
 		Produto p3 = new Produto();
 		p3.setId (22l);
@@ -40,7 +42,7 @@ public class LojaController {
 		p3.setCodigobarras("213K12312JQW13OWE");
 		p3.setDescricao("Honda Civic Si 2007");
 		p3.setPreco(63265.62);
-		
+		p3.setStatus(true);
 		
 		// Adicionando os produtos à lista
 		
