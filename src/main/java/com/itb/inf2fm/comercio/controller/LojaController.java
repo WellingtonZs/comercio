@@ -51,7 +51,12 @@ public class LojaController {
 		listaDeProdutos.add(p3);
 		
 		model.addAttribute("listaDeProdutos", listaDeProdutos);
-		
 		return "produtos";
-	}
-}
+		}
+		@GetMapping("/novo-produto")
+		public String novoProduto(Produto produto,Model model) {
+			model.addAttribute("produto", produto);
+			
+			return "novo-prod";}
+		}
+		

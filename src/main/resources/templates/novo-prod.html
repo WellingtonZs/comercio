@@ -17,7 +17,7 @@
         </div>
         <div class="row">
         <div class="border p-2">
-            <form method="post">
+            <form th:action="@{/comercio/produtos/add-prod}" th:object="${produto}" method="post">
             <div class="row">
             <div class="form-group col-md-12">
             <label for="nome" class="col-form-label">Nome:</label>
@@ -34,6 +34,22 @@
             <input type="text" class="form-control" id="codigoBarras" placeholder="Código de barras">
             </div>
             
+            <div class="form-group col-md-5">
+            <label for="preco" class="col-form-label">Preço:</label>
+            <input type="text" class="form-control" id="preco" placeholder="Preço">
+            </div>
+
+            <div class="form-group col-md-5">
+            <label for="tipoProduto" class="col-form-label">Tipo do produto:</label>
+         	<select name="tipoProduto" class="form-control">
+         		<option>Escolha o tipo</option>
+         		<option>Linha Branca</option>
+         		<option>Eletrônicos</option>
+         	</select>
+            </div>
+            <div class="form-group col-md-12">
+            	<imput type="submit" class="btn btn-primary mb-2" value="Gravar Novo Produto">
+            </div>            
         </div>    
         </form>
         </div>
